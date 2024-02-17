@@ -59,7 +59,7 @@ jobs:
       uses: actions/download-artifact@v3
       with:
         name: .net-app
-        path: .net-app
+        path: ${{env.DOTNET_ROOT}}/myapp
   
     #Download the bicep templates from previous job
     - name: Download artifact from build job
